@@ -46,7 +46,6 @@ Use this command to build docker image (with the same version in `package.json`)
 VERSION="1.3.7" && IMAGE_NAME="digitop/diginext" && docker build -t $IMAGE_NAME":latest" -t "$IMAGE_NAME:$VERSION" -f deployment/build.Dockerfile . && docker push "$IMAGE_NAME:$VERSION" && docker push $IMAGE_NAME":latest"
 ```
 
-(Kiểm tra lại ở link này nếu cần: https://hub.docker.com/r/digitop/diginext/tags)
 
 ---
 
