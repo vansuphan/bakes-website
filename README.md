@@ -5,7 +5,6 @@ This is a [Next.js](https://nextjs.org/) framework created by [Digitop](https://
 
 ---
 
-Author: Boss Duy Nguyen <duynguyen@wearetopgroup.com>
 
 ---
 
