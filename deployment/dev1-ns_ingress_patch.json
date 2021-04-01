@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/spec/rules/0/http/paths/-",
+    "value": { "path": "/bakes", "backend": { "serviceName": "bakes-svc", "servicePort": 80 } }
+  }
+]

@@ -1,0 +1,303 @@
+.listItemsImgScale{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 50px 0;
+}
+.containerFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+.contentListItemsProduct{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .contentSlider{
+        .slick-prev, .slick-next{
+            top: 30%;
+        }
+    }
+    
+}
+.containerFilter{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contentListProducts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.cateringContent{
+    .contentListProducts{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        row-gap: 40px;
+    }
+}
+.textCenter{
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+
+.btnNoneStyle, .inputNoneStyle{
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    &:hover{
+        background: transparent;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    &:focus{
+        border: none ;
+        outline: none ;
+        background-color: transparent ;
+        background: transparent;
+    }
+    &:active{
+        border: none ;
+        outline: none ;
+        background-color: transparent ;
+    }
+    &::after{
+        display: none;
+    }
+}
+
+#formLogin{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .ant-form-item{
+        width: 100%;
+    }
+    .hardWidth.ant-form-item{
+        width: 47.8%;
+        display: flex;
+    }
+    input{
+        background: #fff;
+        height: 50px;
+        padding: 0 15px;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid rgba(25,25,25,0.3);
+        font-size: 16px;
+    }
+    .ant-input-affix-wrapper{
+        margin-top: 10px;
+        border: 1px solid rgba(25,25,25,0.3);
+        padding-top: 0;
+        padding-bottom: 0;
+        input{
+            border: none;
+            padding: 0;
+        }
+    }
+    button{
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .ant-form-item-has-error .ant-input, .ant-form-item-has-error .ant-input-affix-wrapper, .ant-form-item-has-error .ant-input-affix-wrapper:hover, .ant-form-item-has-error .ant-input:hover {
+        border-color: #ff4d4f;
+    }
+
+    /* Change Autocomplete styles in Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+    //   border: 1px solid green;
+    -webkit-text-fill-background-color: #fff !important;
+    //   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+    }
+}
+
+.formRegister{
+    .ant-form-item{
+        margin-bottom: 25px;
+    }
+    .ant-form-item-has-error .ant-input{
+        margin-bottom: 5px;
+    }
+    .ant-input-affix-wrapper{
+        margin-top: 0 !important;
+    }
+
+    /* Change Autocomplete styles in Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+    //   border: 1px solid green;
+    -webkit-text-fill-background-color: #fff !important;
+    //   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+    }
+}
+
+
+
+.groupButton{
+    font-size: 1.5vw;
+    span{
+        padding: 10px 20px;
+    }
+    span:nth-child(1){
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(255,255,255,0.3);
+        }
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.infoProductCarousel.mini.slick-vertical.slick-initialized{
+    .slick-slide{
+        opacity: 0.4;
+    }
+    .slick-slide.slick-active.slick-center.slick-current{
+        opacity: 1;
+    }
+}
+
+.listIcon{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 30px;
+    column-gap: 20px;
+    row-gap: 20px;
+    >div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img{
+            width: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.name{
+            text-align: center;
+        }
+    }
+}
+.titleListProducts{
+    font-family: "GaramondPremrPro-LtDisp";
+    font-size: 4vw;
+    text-align: center;
+    padding: 50px 0;
+}
+.container.endSection{
+    padding-bottom: 50px !important;
+}
+.listMenuRight{
+    flex: 1;
+    justify-content: flex-end;
+}
+.menuCustom{
+    display: none;
+}
+
+
+.contentListItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pShop{
+    .filterProductsMobile{
+        display: none;
+    }
+}
+.pCart{
+    .ant-picker{
+        
+        width: 100%;
+        height: 40px;
+    }
+
+}
+.error{
+    color: #ff4d4f;
+    padding: 5px 0;
+    padding-top: 0;
+}
+.countInput{
+    
+    .ant-input-number-handler-wrap{
+        display: none !important;
+    }
+    .ant-input-number{
+        max-width: 40px;
+        outline: none;
+        border: solid 1px rgba(0,0,0,0.4);
+        border-radius: 0;
+        text-align: center;
+    }
+    .ant-input-number-input{
+        text-align: center;
+        padding: 0 5px;
+    }
+    .ant-input-number:hover{
+        border: solid 1px rgba(0,0,0,0.4);
+        --antd-wave-shadow-color: none;
+    }
+
+}
+
+
+
+

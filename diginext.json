@@ -1,0 +1,32 @@
+{
+  "framework": "diginext",
+  "git": {
+    "creator": "Khuongdeptrai",
+    "repoURL": "https://bitbucket.org/digitopvn/bakes/src"
+  },
+  "isStaticSite": false,
+  "shouldShowHelp": false,
+  "shouldShowVersion": false,
+  "shouldUpdateCli": true,
+  "shouldRedirectDomain": false,
+  "shouldGenerate": false,
+  "skipCreatingDirectory": false,
+  "projectSlug": "bakes",
+  "projectName": "Bakes",
+  "username": "Khuongdeptrai",
+  "version": "v1.3.7",
+  "diginext-cli": "0.8.2",
+  "domain": {
+    "staging": [],
+    "prod": []
+  },
+  "cdn-host": {
+    "dev": "https://google-cdn.digitop.vn/bakes/dev",
+    "prod": "https://google-cdn.digitop.vn/bakes/prod"
+  },
+  "cdn": {
+    "dev": false,
+    "staging": false,
+    "prod": false
+  }
+}

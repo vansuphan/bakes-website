@@ -1,0 +1,15 @@
+version: '3'
+services:
+  diginext-deploy:
+    image: digitop/diginext-cli:0.8.2
+    working_dir: /usr/app/
+    # command: sh -c "/usr/diginext-cli/deploy-api.sh"
+    entrypoint: /usr/diginext-cli/deploy-api.sh
+    volumes:
+      - /Volumes/Boprain/Digitop/NextProject/diginext-cli:/usr/diginext-cli:z
+      - ./:/usr/app/
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+
+# docker run --mount type=bind,source="$(pwd)",target=/usr/app/deploy --mount type=bind,source="/var/run/docker.sock",target=/var/run/docker.sock digitop/diginext-cli
